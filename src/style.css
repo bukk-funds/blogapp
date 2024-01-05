@@ -1,0 +1,367 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700;800&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,900;1,500;1,700&display=swap');
+
+*{
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #f4f4f4;
+}
+
+a{
+  text-decoration: none;
+  color: unset;
+}
+
+a.logo{
+  margin-right: 10px;
+  font-size: 25px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+ul .nav-link{
+  list-style: none;
+  display: inline-block;
+  margin-right: 10px;
+  color: #000;
+  text-transform: capitalize;
+  transition: transform 2s ease;
+}
+
+ul .nav-link:hover{
+  transform: translateX(30px);
+}
+
+header{
+  display:flex;
+  justify-content: space-between;
+  align-items: ;
+  padding: 10px;
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+  color: #000;
+  margin-bottom: 58px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000; 
+}
+
+.logomenu{
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  display:none ;
+  cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 30px;
+  height: 3px;
+  background-color: #000;
+  margin: 4px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  transform: translate(0, 7px) rotate(-45deg);
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar3 {
+ transform: translate(0, -7px) rotate(45deg);
+}
+  
+/* Blog Content */
+.blog-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  margin-top: 0px;
+}
+
+/* Left Column */
+.left-column {
+  width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #fff;
+  margin-bottom: 18px;
+}
+
+.blog-card {
+ width: 90%;
+  overflow: hidden;
+  margin-bottom: 17px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.blog-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+/* Right Column */
+.right-column {
+  width:30% ;
+}
+
+/* Ad Container */
+.ad-container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+/* Read More Button */
+.read-more-button {
+  padding: 8px 16px;
+  cursor: pointer;
+  background-color: #ddd;
+  color: #000;
+  border: none;
+  border-radius: 5px;
+  margin-top:7px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.read-more-button:hover {
+  background-color: #357ae8;
+}
+
+/* Blog Info */
+.blog-info {
+  padding: 15px;
+}
+
+.blog-title {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.blog-summary {
+  font-size: 0.9em;
+  color: #555;
+}
+
+.blog-summary img,
+.blog-image {
+  width: 100%;
+  max-height: 150px;
+  object-fit: cover;
+}
+
+
+/* Footer */
+.blog-footer {
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+  background-color: #f4f4f4;
+}
+
+/* login */
+ .card {
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      text-align: center;
+      margin-top: 70px;
+    }
+    
+    h2 {
+      color: #333;
+    }
+
+    .button {
+      background-color: #4285f4;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+      margin-top: 20px;
+    }
+    
+   .button:hover {
+      background-color: #357ae8;
+    }
+    
+    
+.container1 {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+ }
+
+.container1 h1{
+    text-align: center;
+}
+
+label {
+   margin-bottom: 5px;
+ }
+
+ input,
+ textarea {
+     margin-bottom: 15px;
+     padding: 10px;
+     border: 1px solid #ccc;
+     border-radius: 4px;
+  }
+
+input[type="submit"] {
+    background-color: #357ae8;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 80px;
+    outline: none;
+    border: none;
+ }
+ 
+/* search component styles */
+.search-container {
+  margin-bottom: 0px;
+  margin-top: 85px;
+}
+
+.search-input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom:10px;
+  border-radius: 0px;
+  outline: none;
+}
+
+.search-results {
+  list-style: none;
+  padding: 0;
+}
+
+.search-results li {
+  margin-bottom: 8px;
+}
+
+.search-results a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.search-results a:hover {
+  text-decoration: underline;
+}
+
+ .btn-wrap{
+      display: flex;
+      justify-content: space-between;
+      gap: 234px;
+    }
+    .edit-btn{
+    padding:10px;
+    background-color: blue;
+    border: none;
+    outline: none;
+    color:#fff;
+    }
+     .delete-btn{
+      padding: 10px;
+      background-color: red;
+      border: none;
+    outline: none;
+    color:#fff;
+    }
+
+
+@media(max-width: 800px){
+  header{
+    flex-direction: column;
+    width: 100vw;
+  }
+
+  a.logo{
+    font-size: 20px;
+  }
+
+   ul{
+    display: none;
+  }
+
+  .container{
+    display: block;
+  }
+  
+.show_nav{
+  padding-top:10px;
+  width: 100%;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  z-index: 999;
+  left: 0;
+  }
+
+ul .nav-link{
+   width: 100%;
+   height: 50px;
+   font-size: 17px;
+   text-align: center;
+   padding: 0%;
+  }
+  
+.logomenu{
+   justify-content: space-between;
+  }
+
+}
+ 
+@media screen and (max-width: 768px) {
+  .blog-content{
+    flex-flow: column-reverse;
+  }
+  .left-column{
+    width: 100%;
+    margin-bottom: 25px;
+    margin-top: 10px;
+  }
+
+  .blog-card{
+    width: 100%;
+  }
+
+  .right-column{
+    width: 100%;
+    margin-top: 5px;
+  }
+
+  .search-container {
+     margin-top: 50px;
+}
+
+  .search-input{
+    height:50px;
+  }
+  
+  .search-results{
+      display: block;
+    }
+  
+}
+
+ 
